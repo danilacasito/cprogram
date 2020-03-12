@@ -10,7 +10,7 @@
 
 local tArgs = {...}
 local ver = "1.4"
-local sTitle = "Mouse File Manager ClassOs EDition"
+local sTitle = "Nautilus"
 local bugTest, norun, dir, showAll
 local _tArgs = {}
 local config = "mouse.cfg"
