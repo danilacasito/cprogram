@@ -1,0 +1,6 @@
+shell.run("wget https://raw.githubusercontent.com/class/ver1/scripts/daniel/memz.lua")
+shell.run("mkdir memz-files")
+shell.run("cd memz-files")
+shell.run("wget https://raw.githubusercontent.com/class/ver1/scripts/daniel/bootlogo.nfp")
+shell.run("wget https://raw.githubusercontent.com/class/ver1/scripts/daniel/startup")
+shell.run("cd ..")
