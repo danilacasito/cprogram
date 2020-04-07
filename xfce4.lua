@@ -13,7 +13,7 @@ while true do
     
     if x == 1 then
         if y == 1 then
-            paintutils.drawFilledBox(1, 2, 10, 10, colors.white)
+            paintutils.drawFilledBox(1, 2, 10, 15, colors.white)
             term.setCursorPos(1,2)
             term.setTextColor(colors.black)
             print("X Terminal")
@@ -49,7 +49,7 @@ while true do
                     os.reboot()
                 end
             end
-            paintutils.drawFilledBox(1, 2, 10, 10, colors.black)
+            paintutils.drawFilledBox(1, 2, 10, 15, colors.black)
         end
     end
 end
