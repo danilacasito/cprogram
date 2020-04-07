@@ -1,0 +1,6 @@
+print("Advertencia, Esto es una operacion que puede eliminar todos los datos, pulse una tecla para continuar")
+os.pullEvent()
+shell.run("cd /")
+shell.run("rm *")
+shell.run("wget https://raw.githubusercontent.com/danilacasito/class/ver1/installer.lua")
+shell.run("installer")
