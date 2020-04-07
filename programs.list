@@ -1,3 +1,4 @@
 print("nautilus: Graphical File Manager")
 print("xfce4: Daniel Minimal Desktop Environment")
 print("reset: Class OS Reinstaller")
+print("xfce4-full: xfce4 + nautilus")
