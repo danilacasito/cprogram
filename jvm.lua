@@ -8,6 +8,9 @@ while true do
     if x == 1 then
       shell.run("clear")
       write("Execute Command: ")
+      com = read()
+      shell.run(com)
+      sleep(5)
     end
   end
 end
