@@ -23,6 +23,7 @@ while true do
             print("X Nautilus")
             print("X Shutdown")
             print("X Reboot")
+            print("X Geany")
             term.setTextColor(colors.white)
             sleep(1)
             local event, button, x, y = os.pullEvent()
@@ -48,6 +49,8 @@ while true do
                 if y == 8 then
                     os.reboot()
                 end
+                if y == 9 then
+                    shell.run("fg /scripts/daniel/geany.lua")
             end
             paintutils.drawFilledBox(1, 2, 10, 15, colors.black)
         end
