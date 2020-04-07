@@ -51,6 +51,7 @@ while true do
                 end
                 if y == 9 then
                     shell.run("fg /scripts/daniel/geany.lua")
+                end
             end
             paintutils.drawFilledBox(1, 2, 10, 15, colors.black)
         end
