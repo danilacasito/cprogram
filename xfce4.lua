@@ -32,7 +32,7 @@ while true do
                     if fs.exists("/ssdan.lua") then
                         shell.run("/ssdan.lua")
                     else:
-                        loadApi("/startup")
+                        os.loadApi("/startup")
                         startup.init()
                     end
                 end
