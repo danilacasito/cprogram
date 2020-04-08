@@ -32,8 +32,7 @@ while true do
                     if fs.exists("/ssdan.lua") then
                         shell.run("/ssdan.lua")
                     else:
-                        os.loadApi("/startup")
-                        startup.init()
+                        shell.run("fg /startup.lua term")
                     end
                 end
                 if y == 3 then
@@ -46,7 +45,11 @@ while true do
                     shell.run("fg adventure")
                 end
                 if y == 6 then
-                    shell.run("fg /scripts/daniel/nautilus.lua")
+                    if fs.exists("/scripts/daniel/nautilus.lua") then
+                        shell.run("/scripts/daniel/nautilus.lua")
+                    elseif fs.exists("/usr/bin/nautilus.lua") then
+                        shell.run("/usr/bin/nautilus.lua")
+                    end
                 end
                 if y == 7 then
                     os.shutdown()
@@ -55,7 +58,12 @@ while true do
                     os.reboot()
                 end
                 if y == 9 then
-                    shell.run("fg /scripts/daniel/geany.lua")
+                    if fs.exists("/scripts/daniel/geany.lua") then
+                        shell.run("/scripts/daniel/geany.lua")
+                    elseif fs.exists("/usr/bin/geany.lua")
+                        shell.run("/usr/bin/geany.lua")
+                    end
+                    
                 end
             end
             paintutils.drawFilledBox(1, 2, 10, 15, colors.black)
