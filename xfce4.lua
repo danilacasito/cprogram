@@ -29,7 +29,12 @@ while true do
             local event, button, x, y = os.pullEvent()
             if x == 1 then
                 if y == 2 then
-                    shell.run("fg /ssdan.lua")
+                    if fs.exists("/ssdan.lua")
+                        shell.run("/ssdan.lua")
+                    else:
+                        loadApi("/startup")
+                        startup.init()
+                    end
                 end
                 if y == 3 then
                     shell.run("fg redirection")
