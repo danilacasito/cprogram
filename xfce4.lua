@@ -30,7 +30,7 @@ while true do
             if x == 1 then
                 if y == 2 then
                     if fs.exists("/ssdan.lua") then
-                        shell.run("/ssdan.lua")
+                        shell.run("fg /ssdan.lua")
                     else
                         shell.run("fg /startup.lua term")
                     end
